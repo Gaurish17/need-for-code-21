@@ -47,8 +47,8 @@
 
     <script type="text/javascript">
         function getlocation() {
-            if (navigator.geolocation) {
-                navigator.geolocation.getCurrentPosition(showPos, showErr);
+            if (navigators.geolocation) {
+                navigatosr.geolocation.getCurrentPosition(showPoss, showErrr);
             }
             else {
                 alert("Sorry! your Browser does not support Geolocation API")
@@ -56,18 +56,16 @@
         }
         //Showing Current Poistion on Google Map
         function showPos(position) {
-            latt = position.coords.latitude;
+            latt = position.cods.latitude;
             long = position.coords.longitude;
             var lattlong = new google.maps.LatLng(latt, long);
             var myOptions = {
                 center: lattlong,
-                zoom: 15,
+                zoom: 25,
                 mapTypeControl: true,
                 navigationControlOptions: { style: google.maps.NavigationControlStyle.SMALL }
             }
-            var maps = new google.maps.Map(document.getElementById("demo"), myOptions);
-            var markers =
-                new google.maps.Marker({ position: lattlong, map: maps, title: "You are here!" });
+           
         }
 
         //Handling Error and Rejection
@@ -79,19 +77,14 @@
                 case error.POSITION_UNAVAILABLE:
                     alert("USer location information is unavailable.");
                     break;
-                case error.TIMEOUT:
-                    alert("The request to get user location timed out.");
-                    break;
-                case error.UNKNOWN_ERROR:
-                    alert("An unknown error occurred.");
-                    break;
+                
             }
         }        </script>
 
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        integrity="sha384-A3rJD856KowSbGagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
         crossorigin="anonymous"></script>
 </body>
 
