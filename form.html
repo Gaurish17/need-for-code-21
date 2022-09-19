@@ -18,7 +18,7 @@
     <script src="form.js" defer></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      integrity="sha384-A3rJD856KowSb7dYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
       crossorigin="anonymous"
     ></script>
   </head>
@@ -79,12 +79,12 @@
               <span>Name</span>
             </div>
             <div class="input-container">
-              <input type="tel" name="phone" class="input" id="phone" />
+              <input type="tel" name="phone" class=input" id=phone" />
               <label for="">Phone</label>
               <span>Phone</span>
             </div>
             <div class="input-container">
-              <input type="email" name="email" class="input" id="email" />
+              <input type="email" name="email" class=input" id="email" />
               <label for="">Email</label>
               <span>Email</span>
             </div>
@@ -99,8 +99,8 @@
     <script type="module">
       // Import the functions you need from the SDKs you need
       import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.1/firebase-app.js";
-      import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.9.1/firebase-analytics.js";
-      // TODO: Add SDKs for Firebase products that you want to use
+      import { getAnalytics } from "https://www.gs.com/firebasejs/9.9.1/firebase-analytics.js";
+      // TODO: Add SDKs for Firebase products that yu want to use
       // https://firebase.google.com/docs/web/setup#available-libraries
     
       // Your web app's Firebase configuration
@@ -112,7 +112,7 @@
         projectId: "needforcode-2e873",
         storageBucket: "needforcode-2e873.appspot.com",
         messagingSenderId: "255055974443",
-        appId: "1:255055974443:web:86ed4ce25e02db3ef2da6e",
+        appId: "1:255055974443:web:86ed5e02db3ef2da6e",
         measurementId: "G-SVB6TF8DRH"
       };
     
@@ -120,7 +120,7 @@
       firebase.initializeApp(firebaseConfig);
   
 
-      var infoRef = firebase.database().ref("info");
+      var infoRef = firease.database().ref("info");
 
   document.getElementById("contactForm").addEventListener('submit', submitForm);
 
